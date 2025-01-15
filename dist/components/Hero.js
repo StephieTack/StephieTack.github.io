@@ -1,0 +1,46 @@
+import { ButtonPrimary, ButtonOutline } from "./Button";
+export default function Hero() {
+  return /*#__PURE__*/React.createElement("section", {
+    id: "home",
+    className: "pt-28 lg:pt-36"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container items-center lg:grid lg:grid-cols-2 lg:gap-10"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center gap-3"
+  }, /*#__PURE__*/React.createElement("figure", {
+    className: "img-box w-9 h-9 rounded-lg"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "/images/avatar-1.jpg",
+    width: 40,
+    height: 40,
+    alt: "Stephanie Tack Portrait",
+    className: "img-cover"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "relative w-2 h-2 rounded-full bg-emerald-400"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "absolute inset-0 rounded-full bg-emerald-400 animate-ping"
+  })), "Available for work")), /*#__PURE__*/React.createElement("h2", {
+    className: "headline-1 max-w-[15ch] sm:max-w-[20ch] mt-5 mb-8 lg:mb-10"
+  }, "Building Scalable Modern Websites for the Future"), /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center gap-3"
+  }, /*#__PURE__*/React.createElement(ButtonPrimary, {
+    label: "Download CV",
+    icon: "download"
+  }), " ", /*#__PURE__*/React.createElement(ButtonOutline, {
+    href: "#about",
+    label: "Scroll down",
+    icon: "arrow_downward"
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "hidden lg:block"
+  }, /*#__PURE__*/React.createElement("figure", {
+    className: "w-full max-w-[480px] ml-auto bg-gradient-to-t from-red-400 via-25% via-red-300/20 to-65% rounded-[60px]"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "/images/hero-banner.png",
+    width: 656,
+    height: 800,
+    alt: "Stephanie Tack",
+    className: "w-full"
+  })))));
+}
