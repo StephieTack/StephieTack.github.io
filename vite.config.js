@@ -4,9 +4,8 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/",
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  base: "/StephieTack.github.io/", // your repository name
   build: {
-    outDir: "dist", // Der Ordner, in dem die gebauten Dateien landen
+    outDir: "dist", // The folder where the built files are placed
   },
 });
