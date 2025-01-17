@@ -1,11 +1,17 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/StephieTack.github.io/", // your repository name
+  base: "/StephieTack.github.io/", // Your GitHub Pages repository name
   build: {
-    outDir: "dist", // The folder where the built files are placed
+    outDir: "dist",
+    rollupOptions: {
+      input: "index.html",
+    },
+  },
+  esbuild: {
+    loader: "jsx", // Ensures JSX is properly compiled
+    include: /src\/.*\.[jt]sx?$/, // Include JSX and TSX files in processing
   },
 });
