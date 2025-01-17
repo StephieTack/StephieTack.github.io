@@ -37,7 +37,7 @@ const skillItem = [
     desc: "Framework",
   },
   {
-    imgSrc: "/images/tailwindcss.svg",
+    imgSrc: "/StephieTack.github.io/images/tailwindcss.svg",
     label: "TailwindCSS",
     desc: "User Interface",
   },
